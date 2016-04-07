@@ -9,10 +9,10 @@ dotfiles_dir=~/dotfiles
 dirs="bash"
 
 # Update dotfiles to master branch
-#echo "Updating $dotfiles_dir to master"
-#cd $dotfiles_dir;
-#git pull origin master;
-#cd;
+echo "Updating $dotfiles_dir to master"
+cd $dotfiles_dir;
+git pull origin master;
+cd;
 
 echo ""
 
