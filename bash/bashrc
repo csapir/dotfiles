@@ -19,6 +19,11 @@ alias gb='git branch'
 alias gc='git checkout'
 alias gpu='git pull'
 
+# virtualenv
+alias mkvenv='virtualenv venv'
+alias von='source venv/bin/activate'
+alias voff='deactivate'
+
 # misc
 alias chrome='open -a "Google Chrome"'
 alias mysql='/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot'
