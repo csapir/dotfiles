@@ -16,3 +16,7 @@
       version-control t)
 
 (provide 'init-local)
+
+(tramp-set-completion-function "ssh"
+                               '((tramp-parse-sconfig "/etc/ssh/ssh_config")
+                                 (tramp-parse-sconfig "~/.ssh/config")))
