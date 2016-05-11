@@ -20,7 +20,7 @@ alias gc='git checkout'
 alias gpu='git pull'
 
 # virtualenv
-alias mkvenv='virtualenv venv'
+alias mkvenv='virtualenv-3.4 venv'
 alias von='source venv/bin/activate'
 alias voff='deactivate'
 
@@ -29,6 +29,16 @@ alias chrome='open -a "Google Chrome"'
 alias mysql='/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot'
 alias start-selenium='java -jar /Applications/MAMP/htdocs/p212121/server-standalone-2.45.0.jar'
 alias neo='~/neo4j-community-2.1.6/bin/neo4j'
+alias untar='tar xvzf'
+
+# wordpress
+
+# download wordpress, unzip and create wp-config.php file
+#wp-install='wget http://wordpress.org/latest.tar.gz; tar xzvf latest.tar.gz; cp wp-config-sample.php wp-config.php; rm latest.tar.gz'
+
+# Change directory permissions rwxr-xr-x and file permissions rw-r--r--
+#wp-chmod='find . -type d -exec chmod 755 {} \;; find . -type f -exec chmod 644 {} \;'
+
 
 # memcached
 alias memstats='echo stats | nc 127.0.0.1 11211'
