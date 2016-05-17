@@ -39,6 +39,10 @@ alias untar='tar xvzf'
 # Change directory permissions rwxr-xr-x and file permissions rw-r--r--
 #wp-chmod='find . -type d -exec chmod 755 {} \;; find . -type f -exec chmod 644 {} \;'
 
+# django
+alias djrs='python3 manage.py runserver'
+alias djmkmig='python3 manage.py makemigrations'
+alias djmig='python3 manage.py migrate'
 
 # memcached
 alias memstats='echo stats | nc 127.0.0.1 11211'
