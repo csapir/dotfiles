@@ -1,0 +1,40 @@
+# movement
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+alias rootdir='cd /var/www/html/'
+
+# git
+alias ga='git add'
+alias gp='git push'
+alias gl='git log'
+alias gs='git status'
+alias gd='git diff'
+alias gm='git commit -m'
+alias gcm='git commit'
+alias gb='git branch'
+alias gc='git checkout'
+alias gpu='git pull'
+
+# virtualenv
+alias mkvenv='virtualenv-3.4 venv'
+alias von='source venv/bin/activate'
+alias voff='deactivate'
+
+# misc
+alias chrome='open -a "Google Chrome"'
+alias mysql='/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot'
+alias start-selenium='java -jar /Applications/MAMP/htdocs/p212121/server-standalone-2.45.0.jar'
+alias neo='~/neo4j-community-2.1.6/bin/neo4j'
+alias untar='tar xvzf'
+
+# django
+alias djrs='python3 manage.py runserver'
+alias djmkmig='python3 manage.py makemigrations'
+alias djmig='python3 manage.py migrate'
+
+# memcached
+alias memstats='echo stats | nc 127.0.0.1 11211'
+

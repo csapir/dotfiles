@@ -1,0 +1,9 @@
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/chensapir/.oh-my-zsh
+
+ZSH_THEME="robbyrussell"
+plugins=(git emacs)
+export EDITOR='emacs'
+
+source $ZSH/oh-my-zsh.sh
+source $HOME/.aliases

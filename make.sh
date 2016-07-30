@@ -6,19 +6,22 @@
 
 # Variables
 dotfiles_dir=~/dotfiles
-dirs="bash"
+dirs="zsh"
+aliases="aliases"
 
 # Update dotfiles to master branch
 echo "Updating $dotfiles_dir to master"
 cd $dotfiles_dir;
-git pull origin master;
+#git pull origin master;
 cd;
 
 echo ""
 
 function makeLinks() {
-    # For each directory in dirs, make a symlink for each file found that starts
-    # with a . (dot)
+    # aliases
+    ln -svf $dotfiles_dir/$aliases ~/.$aliases
+
+    # For each dotfile in dirs, make a symlink
     for dir in $dirs; do
 	echo "Linking $dir files"
 	cd $dotfiles_dir/$dir;
@@ -30,6 +33,10 @@ function makeLinks() {
 
     # emacs
     ln -svf $dotfiles_dir/emacs/emacs.d ~/.emacs.d
+
+    # oh-my-zsh
+    ln -svf $dotfiles_dir/.oh-my-zsh ~/.oh-my-zsh
+
     echo "Finished."
 }
 
