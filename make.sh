@@ -35,7 +35,7 @@ function makeLinks() {
     ln -svf $dotfiles_dir/emacs/emacs.d ~/.emacs.d
 
     # oh-my-zsh
-    ln -svf $dotfiles_dir/.oh-my-zsh ~/.oh-my-zsh
+    ln -svf $dotfiles_dir/oh-my-zsh ~/.oh-my-zsh
 
     echo "Finished."
 }
